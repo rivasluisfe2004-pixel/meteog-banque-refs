@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banque de réfs · MétéOG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ciel: #8FD3FF; --nuit: #16142B; --jaune: #FDDA00; --orange: #FF8C00; --brule: #F95900; --brun: #66210B;
+  --blanc: #FDFDFD; --rose: #FFB8CC; --menthe: #B6EFD4; --lavande: #C8B8FF; --creme: #FFF1D0;
+  --trait: 3px solid var(--nuit);
+}
+* { box-sizing: border-box; margin: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { background: var(--ciel); color: var(--nuit); font-family: "Open Sans", sans-serif; letter-spacing: -.02em; overflow-x: hidden; }
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+h1, h2, h3 { font-family: Anton, sans-serif; font-weight: 400; letter-spacing: 0; text-transform: uppercase; line-height: .95; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+.btn { font: 700 14px/1 "Open Sans", sans-serif; text-transform: uppercase; text-decoration: none; background: var(--blanc); color: var(--nuit);
+  border: var(--trait); border-radius: 12px; padding: 12px 14px; box-shadow: 3px 3px 0 var(--nuit); cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: transform .12s, box-shadow .12s; }
+.btn:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--nuit); }
+.btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--nuit); }
+.btn.jaune { background: var(--jaune); } .btn.nuit { background: var(--nuit); color: var(--blanc); box-shadow: 3px 3px 0 var(--brule); }
+:focus-visible { outline: 3px solid var(--brule); outline-offset: 3px; }
+
+/* en-tête */
+header { padding: 40px 0 34px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: end; }
+.pill { display: inline-block; font: 700 12px/1 "Open Sans", sans-serif; text-transform: uppercase; background: var(--jaune); border: var(--trait); border-radius: 999px; padding: 7px 12px; }
+header h1 { font-size: clamp(56px, 8vw, 108px); margin-top: 14px; color: var(--blanc); -webkit-text-stroke: 8px var(--nuit); paint-order: stroke fill; text-shadow: 6px 6px 0 var(--nuit); }
+header h1 span { color: var(--jaune); }
+header p { font-size: 17px; line-height: 1.5; margin-top: 16px; max-width: 480px; }
+.steps { list-style: none; padding: 0; display: grid; gap: 10px; }
+.steps li { display: flex; gap: 14px; align-items: center; background: var(--blanc); border: var(--trait); border-radius: 14px; padding: 12px 16px; box-shadow: 4px 4px 0 var(--nuit); font-size: 15px; line-height: 1.35; }
+.steps b { font: 400 30px/1 Anton, sans-serif; color: var(--brule); min-width: 22px; }
+
+/* bandeau défilant (vitesse fixée en px/s par le script) */
+.ticker { background: var(--nuit); border-block: var(--trait); overflow: hidden; padding: 12px 0; }
+.ticker .track { display: flex; gap: 40px; width: max-content; animation: tick 200s linear infinite; font: 400 24px/1 Anton, sans-serif; text-transform: uppercase; }
+.ticker span { color: var(--blanc); white-space: nowrap; }
+.ticker span::after { content: "✦"; color: var(--jaune); margin-left: 40px; }
+@keyframes tick { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ticker .track { animation: none; } }
+
+/* barre de filtres */
+.tools { position: sticky; top: 0; z-index: 5; background: var(--ciel); border-bottom: var(--trait); padding: 12px 0; }
+.tools .wrap { display: flex; gap: 12px; align-items: center; }
+.tools input { font: 700 15px "Open Sans", sans-serif; border: var(--trait); border-radius: 12px; padding: 11px 14px; width: 260px; flex: none; background: var(--blanc); }
+.chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding: 3px; }
+.chip { font: 700 13px/1 "Open Sans", sans-serif; text-transform: uppercase; white-space: nowrap; border: var(--trait); border-radius: 999px; padding: 9px 13px; background: var(--blanc); cursor: pointer; text-decoration: none; }
+.chip:hover { background: var(--jaune); }
+.chip i { font-style: normal; opacity: .5; margin-left: 3px; }
+
+/* sections par catégorie */
+main { padding: 10px 0 80px; }
+.cat { padding-top: 40px; }
+.cat-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 18px; }
+.cat-head h2 { font-size: clamp(32px, 4vw, 48px); background: var(--c); border: var(--trait); border-radius: 14px; padding: 8px 16px 6px; box-shadow: 4px 4px 0 var(--nuit); }
+.cat-head p { font-size: 15px; opacity: .8; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+
+/* carte = juste l'image, le nom et la personne ; tout le reste est dans la fenêtre */
+.card { text-align: left; font: inherit; color: inherit; background: var(--blanc); border: var(--trait); border-radius: 16px; box-shadow: 5px 5px 0 var(--nuit);
+  overflow: hidden; cursor: pointer; padding: 0; display: flex; flex-direction: column; transition: transform .15s, box-shadow .15s; }
+.card:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--brule); }
+.card .pic { display: block; position: relative; aspect-ratio: 1; background: var(--nuit); border-bottom: var(--trait); }
+.card .pic img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.card .play { position: absolute; right: 10px; bottom: 10px; width: 42px; height: 42px; border-radius: 50%; background: var(--jaune); border: var(--trait); display: grid; place-items: center; font-size: 15px; }
+.card .txt { padding: 12px 14px 14px; display: grid; gap: 6px; }
+.card .t { font: 400 21px/1.02 Anton, sans-serif; text-transform: uppercase; }
+.card .qui { font-size: 13px; font-weight: 700; opacity: .75; }
+.empty { font: 400 30px Anton, sans-serif; text-transform: uppercase; text-align: center; padding: 60px 0; }
+
+/* fenêtre de la réf */
+dialog { margin: auto; border: var(--trait); border-radius: 20px; box-shadow: 8px 8px 0 var(--nuit); padding: 0; background: var(--blanc); width: min(980px, 94vw); max-height: 92vh; overflow: auto; }
+dialog::backdrop { background: rgba(22, 20, 43, .75); }
+.dlg { display: grid; grid-template-columns: 1.25fr 1fr; }
+.dlg .vid { background: var(--nuit); display: grid; place-items: center; min-height: 300px; }
+.dlg video { display: block; width: 100%; max-height: 80vh; }
+.dlg .info { padding: 22px 22px 24px; display: flex; flex-direction: column; gap: 14px; }
+.dlg .top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.tag { font: 700 11px/1 "Open Sans", sans-serif; text-transform: uppercase; border: 2px solid var(--nuit); border-radius: 999px; padding: 5px 9px; background: var(--c, var(--menthe)); }
+.dlg h2 { font-size: 34px; }
+.row small { display: block; font: 700 11px/1 "Open Sans", sans-serif; text-transform: uppercase; opacity: .55; margin-bottom: 4px; }
+.row { font-size: 15px; line-height: 1.45; }
+.quote { font-style: italic; background: var(--creme); border-left: 5px solid var(--brule); border-radius: 0 10px 10px 0; padding: 10px 12px; }
+.doute { font-size: 13px; background: var(--rose); border: 2px solid var(--nuit); border-radius: 10px; padding: 8px 10px; }
+.acts { display: grid; gap: 10px; margin-top: auto; }
+.nav { display: flex; justify-content: space-between; gap: 10px; }
+.nav .btn { flex: 1; white-space: nowrap; font-size: 13px; padding: 12px 8px; }
+.nav .btn[disabled] { opacity: .35; pointer-events: none; }
+.close { background: none; border: 0; font: 700 26px/1 "Open Sans", sans-serif; cursor: pointer; padding: 4px 8px; }
+
+footer { background: var(--nuit); color: var(--blanc); padding: 26px 0; font-size: 13px; line-height: 1.5; }
+
+@media (max-width: 760px) {
+  .wrap { padding: 0 16px; }
+  header { grid-template-columns: 1fr; gap: 22px; padding-top: 28px; }
+  header h1 { -webkit-text-stroke: 6px var(--nuit); text-shadow: 4px 4px 0 var(--nuit); }
+  .tools .wrap { flex-direction: column; align-items: stretch; gap: 10px; }
+  .tools input { width: 100%; }
+  .chips { margin: 0 -16px; padding: 3px 16px; }
+  .grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .card .t { font-size: 17px; } .card .txt { padding: 10px; }
+  .dlg { grid-template-columns: 1fr; }
+  .dlg h2 { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div>
+    <span class="pill">MétéOG · Devine la réf</span>
+    <h1>Banque <span>de réfs</span></h1>
+    <p id="intro"></p>
+  </div>
+  <ol class="steps">
+    <li><b>1</b>Choisis une catégorie ou tape un nom (Bassem, Kaaris, Mbappé…).</li>
+    <li><b>2</b>Clique sur une réf : le clip se lance, sans le texte TikTok.</li>
+    <li><b>3</b>Tu y trouves qui parle, d'où ça vient, la phrase, et le bouton pour télécharger le clip.</li>
+  </ol>
+</header>
+<div class="ticker" aria-hidden="true"><div class="track" id="ticker"></div></div>
+<div class="tools">
+  <div class="wrap">
+    <input id="q" type="search" placeholder="Chercher (ex. Kaaris)" aria-label="Chercher une réf ou une personne">
+    <nav class="chips" id="chips" aria-label="Catégories"></nav>
+  </div>
+</div>
+<main class="wrap" id="main"></main>
+<dialog id="dlg" aria-labelledby="d-titre"></dialog>
+<footer><div class="wrap">Banque de réfs MétéOG · SAE 302 · les vidéos restent la propriété de leurs auteurs. « Vidéo originale » = la source retrouvée ; « Chercher l'original » = une recherche YouTube quand la source n'est pas en ligne.</div></footer>
+
+<script src="refs-data.js"></script>
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const ytSearch = q => 'https://www.youtube.com/results?search_query=' + encodeURIComponent(q);
+// ordre et couleur des catégories
+const CATS = [
+  ['Bassem', 'var(--jaune)', 'Les appels et lives de Bassem Braïki (Radio Hlib).'],
+  ['Streamers & YouTube', 'var(--rose)', 'Twitch, YouTube : Kaydop, Amine, GameMixTreize, BotKZ…'],
+  ['Télé & téléréalité', 'var(--menthe)', 'Groland, Les Marseillais, jeux télé, séries.'],
+  ['Rap', 'var(--lavande)', 'Kaaris et Gazo.'],
+  ['Foot', 'var(--orange)', 'Messi, Mbappé et les supporters.'],
+  ['Politique', 'var(--ciel)', 'Les moments cultes des politiques.'],
+  ['Vidéos virales', 'var(--creme)', 'Des inconnus devenus des réfs.'],
+];
+const color = c => (CATS.find(x => x[0] === c) || [, 'var(--menthe)'])[1];
+const slug = s => s.normalize('NFD').replace(/[^\w]+/g, '-').toLowerCase();
+
+$('#intro').textContent = `${REFS.length} réfs tirées de ${new Set(REFS.flatMap(r => r.tiktok)).size} TikToks, rangées par catégorie. Chaque réf a son clip propre, prêt pour le mini-jeu.`;
+
+// bandeau : vitesse constante (~45 px/s) quelle que soit sa longueur
+const track = $('#ticker');
+track.innerHTML = REFS.map(r => `<span>${esc(r.titre)}</span>`).join('').repeat(2);
+requestAnimationFrame(() => { track.style.animationDuration = (track.scrollWidth / 2 / 45) + 's'; });
+
+$('#chips').innerHTML = CATS.map(([c, col]) => `<a class="chip" href="#${slug(c)}" style="--c:${col}">${esc(c)}<i>${REFS.filter(r => r.cat === c).length}</i></a>`).join('');
+
+function render() {
+  const q = $('#q').value.trim().toLowerCase();
+  const hit = r => !q || [r.titre, r.qui, r.source, r.citation].join(' ').toLowerCase().includes(q);
+  const html = CATS.map(([c, col, desc]) => {
+    const list = REFS.filter(r => r.cat === c && hit(r));
+    if (!list.length) return '';
+    return `<section class="cat" id="${slug(c)}" style="--c:${col}">
+      <div class="cat-head"><h2>${esc(c)}</h2><p>${list.length} réf${list.length > 1 ? 's' : ''} · ${esc(desc)}</p></div>
+      <div class="grid">${list.map(r => `
+        <button class="card" data-i="${REFS.indexOf(r)}">
+          <span class="pic"><img src="img/${r.img}" alt="" loading="lazy"><span class="play">▶</span></span>
+          <span class="txt"><span class="t">${esc(r.titre)}</span><span class="qui">${esc(r.qui)}</span></span>
+        </button>`).join('')}</div>
+    </section>`;
+  }).join('');
+  $('#main').innerHTML = html || '<p class="empty">Aucune réf trouvée</p>';
+}
+$('#q').oninput = render;
+render();
+
+// fenêtre d'une réf ; on navigue dans l'ordre affiché
+const dlg = $('#dlg');
+let cur = -1;
+const shown = () => [...document.querySelectorAll('.card')].map(b => +b.dataset.i);
+function open(i) {
+  cur = i;
+  const r = REFS[i], list = shown(), k = list.indexOf(i);
+  dlg.innerHTML = `<div class="dlg">
+    <div class="vid"><video src="clips/${r.clip}" controls autoplay playsinline></video></div>
+    <div class="info">
+      <div class="top"><span class="tag" style="--c:${color(r.cat)}">${esc(r.cat)}</span><button class="close" aria-label="Fermer">✕</button></div>
+      <h2 id="d-titre">${esc(r.titre)}</h2>
+      <div class="row"><small>Qui</small><b>${esc(r.qui)}</b>${r.celeb ? ' · personnalité connue' : ''}</div>
+      <div class="row"><small>D'où ça vient</small>${esc(r.source)}</div>
+      ${r.citation ? `<div class="row"><small>La phrase</small><div class="quote">« ${esc(r.citation)} »</div></div>` : ''}
+      ${r.doute ? '<div class="doute">Source pas encore confirmée : à vérifier avant de l\'utiliser.</div>' : ''}
+      <div class="acts">
+        <a class="btn jaune" href="clips/${r.clip}" download>Télécharger le clip</a>
+        <a class="btn nuit" href="${r.original || ytSearch(r.recherche)}" target="_blank" rel="noopener">${r.original ? 'Vidéo originale ↗' : 'Chercher l\'original ↗'}</a>
+        ${r.tiktok.map((u, n) => `<a class="btn" href="${u}" target="_blank" rel="noopener">Voir le TikTok${r.tiktok.length > 1 ? ' ' + (n + 1) : ''} ↗</a>`).join('')}
+        <div class="nav"><button class="btn" data-go="${list[k - 1] ?? ''}" ${k > 0 ? '' : 'disabled'}>← Précédente</button><button class="btn" data-go="${list[k + 1] ?? ''}" ${k < list.length - 1 ? '' : 'disabled'}>Suivante →</button></div>
+      </div>
+    </div>
+  </div>`;
+  if (!dlg.open) dlg.showModal();
+}
+$('#main').onclick = e => { const b = e.target.closest('.card'); if (b) open(+b.dataset.i); };
+dlg.onclick = e => {
+  if (e.target === dlg || e.target.closest('.close')) return dlg.close();
+  const g = e.target.closest('[data-go]'); if (g && g.dataset.go !== '') open(+g.dataset.go);
+};
+dlg.addEventListener('keydown', e => {
+  const list = shown(), k = list.indexOf(cur);
+  if (e.key === 'ArrowRight' && k < list.length - 1) open(list[k + 1]);
+  if (e.key === 'ArrowLeft' && k > 0) open(list[k - 1]);
+});
+dlg.addEventListener('close', () => { dlg.innerHTML = ''; });
+</script>
+</body>
+</html>
