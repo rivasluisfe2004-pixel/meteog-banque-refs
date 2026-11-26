@@ -1443,5 +1443,581 @@ const REFS = [
   "tiktok": [
    "https://www.tiktok.com/@tks.psg03/video/7627447056654732566"
   ]
+ },
+ {
+  "titre": "Arrête de paniquer",
+  "qui": "Inconnus (partie de EA FC en clubs pro)",
+  "celeb": false,
+  "source": "Vocal pendant une partie de EA Sports FC (clubs pro)",
+  "cat": "Vidéos virales",
+  "citation": "Il panique, mais il panique ! Frère, tu passes le mec ! — Non, arrête de paniquer !",
+  "original": null,
+  "recherche": "arrête de paniquer clubs pro vocal",
+  "top": false,
+  "doute": false,
+  "t": 5,
+  "img": "81.jpg",
+  "clip": "81.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@papi__nueve/video/7290619006074080544"
+  ]
+ },
+ {
+  "titre": "Il est plus proche que tu le penses",
+  "qui": "Joueur de Valorant (call en vocal)",
+  "celeb": false,
+  "source": "Partie de Valorant, vocal d'équipe",
+  "cat": "Streamers & YouTube",
+  "citation": "Il est plus proche que tu le penses.",
+  "original": null,
+  "recherche": "il est plus proche que tu le penses valorant call",
+  "top": false,
+  "doute": false,
+  "t": 9,
+  "img": "82.jpg",
+  "clip": "82.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@r4phiix/video/7688034889995668769"
+  ]
+ },
+ {
+  "titre": "Des vélos en l'air",
+  "qui": "Inconnu (story Snapchat)",
+  "celeb": false,
+  "source": "Story Snapchat : visite d'un appart en bazar",
+  "cat": "Vidéos virales",
+  "citation": "Des casseroles sur le mur, des vélos en l'air, des dessins sur les murs…",
+  "original": null,
+  "recherche": "vélo en l'air snapchat casseroles sur le mur",
+  "top": false,
+  "doute": false,
+  "t": 26,
+  "img": "83.jpg",
+  "clip": "83.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@dineroooos/video/7437281162550136096"
+  ]
+ },
+ {
+  "titre": "Ça drop direct !",
+  "qui": "Streamer en live (Balti ?)",
+  "celeb": false,
+  "source": "Live Twitch : un viewer fait écouter sa prod",
+  "cat": "Streamers & YouTube",
+  "citation": "C'est une vraie prod ça, j'aime bien… Ah, ça drop direct !",
+  "original": null,
+  "recherche": "ça drop direct live prod",
+  "top": false,
+  "doute": true,
+  "t": 23,
+  "img": "84.jpg",
+  "clip": "84.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@french_ref/video/7519597952730467606"
+  ]
+ },
+ {
+  "titre": "Trop relou, trop relou",
+  "qui": "Zola",
+  "celeb": true,
+  "source": "Interview Clique (Canal+)",
+  "cat": "Rap",
+  "citation": "Quand je suis rentré des États-Unis, les mots sortaient en anglais. Trop relou, trop relou.",
+  "original": null,
+  "recherche": "Zola trop relou trop relou",
+  "top": false,
+  "doute": false,
+  "t": 6,
+  "img": "85.jpg",
+  "clip": "85.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@1jour1ref79/video/7421624356163308833"
+  ]
+ },
+ {
+  "titre": "Ça suffit, monsieur ! Enough !",
+  "qui": "Inconnue (vidéo virale)",
+  "celeb": false,
+  "source": "Vidéo virale filmée dans la rue, la nuit",
+  "cat": "Vidéos virales",
+  "citation": "S'il vous plaît, ça suffit monsieur, ça suffit ! Enough monsieur, enough !",
+  "original": null,
+  "recherche": "ça suffit monsieur enough inaf",
+  "top": false,
+  "doute": false,
+  "t": 5,
+  "img": "86.jpg",
+  "clip": "86.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@jassmine.50/video/7449078615246949654"
+  ]
+ },
+ {
+  "titre": "Le football, il a changé",
+  "qui": "Kylian Mbappé",
+  "celeb": true,
+  "source": "Conférence de presse au PSG",
+  "cat": "Foot",
+  "citation": "Le football, il a changé… Le monde du football, il a changé.",
+  "original": null,
+  "recherche": "Mbappé le football il a changé conférence",
+  "top": false,
+  "doute": false,
+  "t": 4,
+  "img": "87.jpg",
+  "clip": "87.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@futfootball2/video/7107749942206205189"
+  ]
+ },
+ {
+  "titre": "J'ai joué à tous les postes",
+  "qui": "Kylian Mbappé",
+  "celeb": true,
+  "source": "Interview pour Le Parisien, en équipe de France",
+  "cat": "Foot",
+  "citation": "2018, j'ai joué à droite, 2022, à gauche… Personne n'a fait ça dans l'histoire de l'équipe de France.",
+  "original": null,
+  "recherche": "Mbappé 2018 j'ai joué à droite 2022 à gauche",
+  "top": false,
+  "doute": false,
+  "t": 9,
+  "img": "88.jpg",
+  "clip": "88.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@mbapps93/video/7674647702453488929"
+  ]
+ },
+ {
+  "titre": "Le mec il a pas… (t'es trompé)",
+  "qui": "Éric Abidal",
+  "celeb": true,
+  "source": "Interview quiz sur sa carrière (source à confirmer)",
+  "cat": "Foot",
+  "citation": "Non, t'es trompé. — 2004-2014 ? — Le mec il a pas… — Non. T'es trompé encore.",
+  "original": null,
+  "recherche": "Abidal le mec il a pas t'es trompé",
+  "top": false,
+  "doute": true,
+  "t": 9,
+  "img": "89.jpg",
+  "clip": "89.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@melangement/video/7531669651143544072"
+  ]
+ },
+ {
+  "titre": "Le steak qui s'énerve",
+  "qui": "Mohamed Henni",
+  "celeb": true,
+  "source": "Vidéo de Mohamed Henni (dégustation de tacos)",
+  "cat": "Streamers & YouTube",
+  "citation": "Tu as le steak qui s'énerve et la sauce fromagère par-dessus qui le calme… C'est incroyable les amis.",
+  "original": null,
+  "recherche": "Mohamed Henni tacos steak qui s'énerve",
+  "top": false,
+  "doute": false,
+  "t": 4,
+  "img": "90.jpg",
+  "clip": "90.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@french_ref/video/7480979971184332054"
+  ]
+ },
+ {
+  "titre": "Wola, je suis bloqué",
+  "qui": "Mohamed Henni",
+  "celeb": true,
+  "source": "Story Snapchat de Mohamed Henni (coincé dans une chaise)",
+  "cat": "Streamers & YouTube",
+  "citation": "Là, je suis bloqué. Je suis vraiment bloqué, les frères.",
+  "original": null,
+  "recherche": "Mohamed Henni bloqué chaise",
+  "top": false,
+  "doute": false,
+  "t": 1,
+  "img": "91.jpg",
+  "clip": "91.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@ritinceouaiiis/video/6949843973439507718"
+  ]
+ },
+ {
+  "titre": "Tu dégages !",
+  "qui": "Greg Guillotin et sa victime",
+  "celeb": true,
+  "source": "Caméra cachée « Le pire stagiaire » de Greg Guillotin",
+  "cat": "Télé & téléréalité",
+  "citation": "Non, tu dégages ! … Tu restes dans le jardin et tu bouges plus !",
+  "original": null,
+  "recherche": "Greg Guillotin pire stagiaire tu dégages",
+  "top": false,
+  "doute": false,
+  "t": 2,
+  "img": "92.jpg",
+  "clip": "92.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@french_ref/video/7456156225709903127"
+  ]
+ },
+ {
+  "titre": "Tu nettoies !",
+  "qui": "Greg Guillotin et sa victime",
+  "celeb": true,
+  "source": "Caméra cachée « Le pire stagiaire » de Greg Guillotin",
+  "cat": "Télé & téléréalité",
+  "citation": "Là, maintenant, tu nettoies ! Tu nettoies ! — Pas de violence, Olivier.",
+  "original": null,
+  "recherche": "Greg Guillotin tu nettoies pire stagiaire",
+  "top": false,
+  "doute": false,
+  "t": 10,
+  "img": "93.jpg",
+  "clip": "93.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@alekssandreee/video/7292079728167619873"
+  ]
+ },
+ {
+  "titre": "Allez, body count",
+  "qui": "Alex Hitchens",
+  "celeb": true,
+  "source": "Podcast / live d'Alex Hitchens",
+  "cat": "Streamers & YouTube",
+  "citation": "Le respect, c'est mutuel… — Allez, body count.",
+  "original": null,
+  "recherche": "Alex Hitchens allez bodycount",
+  "top": false,
+  "doute": false,
+  "t": 3,
+  "img": "94.jpg",
+  "clip": "94.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@papi__nueve/video/7468352733104426262"
+  ]
+ },
+ {
+  "titre": "Vous ne pouvez pas me cancel",
+  "qui": "Alex Hitchens",
+  "celeb": true,
+  "source": "Vidéo d'Alex Hitchens",
+  "cat": "Streamers & YouTube",
+  "citation": "Je suis Alex Hitchens. Vous ne pouvez pas me cancel.",
+  "original": null,
+  "recherche": "Alex Hitchens vous ne pouvez pas me cancel",
+  "top": false,
+  "doute": false,
+  "t": 2,
+  "img": "95.jpg",
+  "clip": "95.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@lax_cxn/video/7587465417904475414"
+  ]
+ },
+ {
+  "titre": "T'es gay ou t'es hétéro ?",
+  "qui": "Karine Le Marchand",
+  "celeb": true,
+  "source": "Live Instagram de Karine Le Marchand avec un abonné",
+  "cat": "Télé & téléréalité",
+  "citation": "Bon, et toi, t'es gay ou t'es hétéro ? — À ton avis ? — Gay ? — Oui, oui.",
+  "original": null,
+  "recherche": "Karine Le Marchand gay ou hétéro live",
+  "top": false,
+  "doute": false,
+  "t": 3,
+  "img": "96.jpg",
+  "clip": "96.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@ktvclipss/video/7160430647079685381"
+  ]
+ },
+ {
+  "titre": "Allez les filles !",
+  "qui": "Inconnue (vidéo virale)",
+  "celeb": false,
+  "source": "Vidéo virale : elle brandit une pancarte puis saute dans le canal",
+  "cat": "Vidéos virales",
+  "citation": "Voilà, donc je n'ai qu'une chose à vous dire… Allez les filles !",
+  "original": null,
+  "recherche": "allez les filles pancarte saute dans l'eau",
+  "top": false,
+  "doute": false,
+  "t": 2,
+  "img": "97.jpg",
+  "clip": "97.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@tig.uii/video/7698465521913662753"
+  ]
+ },
+ {
+  "titre": "Rien de tel qu'une femme pour faire le ménage",
+  "qui": "Valérie Pécresse",
+  "celeb": true,
+  "source": "Vidéo de campagne des régionales en Île-de-France",
+  "cat": "Politique",
+  "citation": "Aujourd'hui le sujet, c'est la propreté… et rien de tel qu'une femme pour faire le ménage.",
+  "original": null,
+  "recherche": "Pécresse rien de tel qu'une femme pour faire le ménage",
+  "top": false,
+  "doute": false,
+  "t": 8,
+  "img": "98.jpg",
+  "clip": "98.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@1pepiteparjour/video/7184014335692279046"
+  ]
+ },
+ {
+  "titre": "Ça doit être ça",
+  "qui": "Inconnus (vidéo virale)",
+  "celeb": false,
+  "source": "Vidéo virale",
+  "cat": "Vidéos virales",
+  "citation": "",
+  "original": null,
+  "recherche": "ça doit être ça mème foot",
+  "top": false,
+  "doute": true,
+  "t": 2,
+  "img": "99.jpg",
+  "clip": "99.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@cailloux444/video/7442424380975615265"
+  ]
+ },
+ {
+  "titre": "Debout mon reuf !",
+  "qui": "Paul Pogba",
+  "celeb": true,
+  "source": "Vidéo de Pogba au centre d'entraînement (source à confirmer)",
+  "cat": "Foot",
+  "citation": "",
+  "original": null,
+  "recherche": "Pogba debout mon reuf",
+  "top": false,
+  "doute": true,
+  "t": 3,
+  "img": "100.jpg",
+  "clip": "100.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@dehkalandfr/video/7319482946103151905"
+  ]
+ },
+ {
+  "titre": "Bonne année à tous mes shegueys",
+  "qui": "Gradur",
+  "celeb": true,
+  "source": "Vidéo de Gradur, 1er janvier 2015",
+  "cat": "Rap",
+  "citation": "Voilà, on est en 2015, jeudi 1er janvier, 15h45, bonne année à tous mes shegueys.",
+  "original": null,
+  "recherche": "Gradur bonne année à tous mes shegueys",
+  "top": false,
+  "doute": false,
+  "t": 3,
+  "img": "101.jpg",
+  "clip": "101.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@zapping2zinzin/video/7251252377804705050"
+  ]
+ },
+ {
+  "titre": "Et la moula !",
+  "qui": "Inconnus (enfant footballeur et un adulte)",
+  "celeb": false,
+  "source": "Vidéo virale après un match perdu",
+  "cat": "Vidéos virales",
+  "citation": "Tu peux arrêter de pleurer s'il te plaît ? Tu peux me faire la moula ? — Et la moula !",
+  "original": null,
+  "recherche": "et la moula enfant foot pleure",
+  "top": false,
+  "doute": false,
+  "t": 31,
+  "img": "102.jpg",
+  "clip": "102.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@1jour1ref79/video/7422354212610149665"
+  ]
+ },
+ {
+  "titre": "Est-ce que vous êtes sérieux ?",
+  "qui": "Pascal Dupraz (Toulouse FC)",
+  "celeb": true,
+  "source": "Causerie du maintien, Toulouse FC (2016), Canal+",
+  "cat": "Foot",
+  "citation": "Est-ce que vous êtes sérieux ? … Ou alors vous êtes fous ! — Oh, you are crazy.",
+  "original": "https://www.youtube.com/watch?v=FUI811qSJCs",
+  "recherche": "Dupraz causerie du maintien",
+  "top": false,
+  "doute": false,
+  "t": 3,
+  "img": "103.jpg",
+  "clip": "103.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@french_ref/video/7516624247977004310"
+  ]
+ },
+ {
+  "titre": "T'as pas volé de pain ?",
+  "qui": "Inconnus (snap viral)",
+  "celeb": false,
+  "source": "Story Snapchat virale",
+  "cat": "Vidéos virales",
+  "citation": "Cheikh, t'as pas volé de pain ? — Non. … Ben alors, Cheikh ?",
+  "original": null,
+  "recherche": "cheikh t'as pas volé de pain snap",
+  "top": false,
+  "doute": false,
+  "t": 9,
+  "img": "104.jpg",
+  "clip": "104.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@tartantan2/video/7665055901526658337"
+  ]
+ },
+ {
+  "titre": "Une clé USB à 15 km",
+  "qui": "Invité sur un plateau télé (radiesthésiste)",
+  "celeb": false,
+  "source": "Plateau télé (nom de l'invité à confirmer)",
+  "cat": "Télé & téléréalité",
+  "citation": "Je suis capable de trouver une clé USB disparue à 15 km de distance, avec le pendule.",
+  "original": null,
+  "recherche": "clé USB à 15 km pendule plateau",
+  "top": false,
+  "doute": true,
+  "t": 3,
+  "img": "105.jpg",
+  "clip": "105.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@elguignolo1/video/7708092807830867232"
+  ]
+ },
+ {
+  "titre": "J'ai un truc qui va te réveiller",
+  "qui": "Élie Semoun & Dieudonné",
+  "celeb": true,
+  "source": "Sketch d'Élie et Dieudonné",
+  "cat": "Télé & téléréalité",
+  "citation": "— Surtout fatigué. — T'es fatigué ? J'ai un truc qui va te réveiller.",
+  "original": null,
+  "recherche": "Élie et Dieudonné sketch ananas fatigué",
+  "top": false,
+  "doute": false,
+  "t": 3,
+  "img": "106.jpg",
+  "clip": "106.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@jacquesjeangeorges/video/7686923988932529440"
+  ]
+ },
+ {
+  "titre": "Le Christ veille sur nous, bordel",
+  "qui": "Alain Soral",
+  "celeb": true,
+  "source": "Vidéo d'Alain Soral (essayiste d'extrême droite)",
+  "cat": "Politique",
+  "citation": "Le Christ veille sur nous, bordel ! Voilà, c'est ça que je veux dire.",
+  "original": null,
+  "recherche": "Soral le Christ veille sur nous bordel",
+  "top": false,
+  "doute": false,
+  "t": 8,
+  "img": "107.jpg",
+  "clip": "107.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@majinpablito/video/7594860279733783830"
+  ]
+ },
+ {
+  "titre": "Non, je ne te respecte pas",
+  "qui": "Alain Soral face à Daniel Conversano",
+  "celeb": true,
+  "source": "Débat filmé « Niveau Zéro »",
+  "cat": "Politique",
+  "citation": "Commence à me parler poliment. — Non, je ne te respecte pas.",
+  "original": null,
+  "recherche": "Soral Conversano je ne te respecte pas",
+  "top": false,
+  "doute": false,
+  "t": 8,
+  "img": "108.jpg",
+  "clip": "108.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@vivi_bat_verse2naruto/video/6949901876301221126"
+  ]
+ },
+ {
+  "titre": "Jésus revient bientôt",
+  "qui": "Djimy Mbaya (prédicateur)",
+  "celeb": false,
+  "source": "Vidéo YouTube « La vision du retour imminent de Jésus-Christ »",
+  "cat": "Vidéos virales",
+  "citation": "Jésus revient bientôt. Oh mon Dieu ! Seigneur, pardon Seigneur !",
+  "original": "https://www.youtube.com/watch?v=AYAAcn9slwQ",
+  "recherche": "Djimy Mbaya Jésus revient bientôt",
+  "top": false,
+  "doute": false,
+  "t": 4,
+  "img": "109.jpg",
+  "clip": "109.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@djimymbaya/video/7142132082020535557"
+  ]
+ },
+ {
+  "titre": "Tu n'as pas le droit d'abandonner",
+  "qui": "Kola Kelly (coach motivation)",
+  "celeb": false,
+  "source": "Vidéo de motivation TikTok de Kola Kelly",
+  "cat": "Vidéos virales",
+  "citation": "Est-ce que tu veux abandonner ? … Tu n'as pas le droit d'abandonner !",
+  "original": null,
+  "recherche": "Kola Kelly tu n'as pas le droit d'abandonner",
+  "top": false,
+  "doute": false,
+  "t": 12,
+  "img": "110.jpg",
+  "clip": "110.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@kola_kelly/video/7339653032159890694"
+  ]
+ },
+ {
+  "titre": "Dis le terme !",
+  "qui": "Supporters interrogés en micro-trottoir",
+  "celeb": false,
+  "source": "Micro-trottoir sur les Champs-Élysées, Coupe du monde 2022",
+  "cat": "Vidéos virales",
+  "citation": "Tu supportes qui, toi ? … Oh, mais dis le terme ! Dis le terme !",
+  "original": null,
+  "recherche": "dis le terme micro-trottoir champs-élysées",
+  "top": false,
+  "doute": false,
+  "t": 35,
+  "img": "111.jpg",
+  "clip": "111.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@enpierre78/video/7280088752775564577"
+  ]
+ },
+ {
+  "titre": "Mais qui elle est celle-là ?",
+  "qui": "Jean-Luc Mélenchon (face à Marine Le Pen)",
+  "celeb": true,
+  "source": "Débat sur France 3, 2002 (archive INA)",
+  "cat": "Politique",
+  "citation": "Moi ? Moi ? … Mais qui elle est celle-là ?",
+  "original": "https://www.youtube.com/watch?v=AVDncyjQsME",
+  "recherche": "Mélenchon mais qui elle est celle-là",
+  "top": false,
+  "doute": false,
+  "t": 4,
+  "img": "112.jpg",
+  "clip": "112.mp4",
+  "tiktok": [
+   "https://www.tiktok.com/@1jour1ref79/video/7437571539341446432"
+  ]
  }
 ];
